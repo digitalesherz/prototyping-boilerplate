@@ -1,0 +1,1938 @@
+doctype html
+html(lang='en')
+  head
+    meta(http-equiv='content-type', content='text/html; charset=UTF-8')
+    meta(charset='utf-8')
+    title CLB
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+    link(href='assets/css/bootstrap.css', rel='stylesheet')
+    //if lt IE 9
+      script(src='//html5shim.googlecode.com/svn/trunk/html5.js')
+    link(href='assets/css/theme.css', rel='stylesheet')
+    // icon font
+    link(href='assets/css/wireless-icons.css', rel='stylesheet')
+    style.
+      .component {
+      padding-bottom: 1em;
+      }
+      .row {
+      padding-top: 1.5em;
+      }
+      .section {
+      padding: 2em 0;
+      }
+      .navbar.affix{
+      width:100%;
+      top:0;
+      z-index: 1111;
+      }
+  body
+    .container
+      #top.row.text-center
+        img.img-responsive(src='img/clever_header.svg', onerror="this.onerror=null; this.src='img/clever_header.png'", alt='', style='margin: 0 auto 10px auto;')
+    .row
+      // navigation
+      nav.navbar.navbar-default(data-spy='affix', data-offset-top='0')
+        .container
+          // Brand and toggle get grouped for better mobile display
+          .navbar-header
+            button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1')
+              span.sr-only Toggle navigation
+              |         
+              span.icon-bar
+              |         
+              span.icon-bar
+              |         
+              span.icon-bar
+            |       
+            span.navbar-brand Wireless Theme Components
+          // Collect the nav links, forms, and other content for toggling
+          #bs-example-navbar-collapse-1.collapse.navbar-collapse
+            ul.nav.navbar-nav.navbar-right
+              li.dropdown
+                a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false')
+                  | Select a component
+                  span.caret
+                // !Nav
+                ul.dropdown-menu(role='menu')
+                  li
+                    a(href='#navbar') Navbar
+                  |             
+                  li
+                    a(href='#buttons') Buttons
+                  |             
+                  li
+                    a(href='#tables') Tables
+                  |             
+                  li
+                    a(href='#forms') Forms
+                  |             
+                  li
+                    a(href='#navs') Navs
+                  |             
+                  li
+                    a(href='#indicators') Indicators
+                  |             
+                  li
+                    a(href='#progress') Progress Bars
+                  |             
+                  li
+                    a(href='#media') Media
+                  |             
+                  li
+                    a(href='#containers') Containers
+                  |             
+                  li
+                    a(href='#dialogs') Dialogs
+                  |             
+                  li
+                    a(href='#icons') Icons
+                  |             
+                  li.divider
+                  |             
+                  li
+                    a(href='#top') Back to top
+              |         
+              li
+                a(href='examples/') Examples
+          // /.navbar-collapse
+        // /.container-fluid
+    .container
+      //
+        Navbar
+        ==================================================
+      #navbar.section.clearfix
+        .row
+          .col-lg-12
+            .page-header
+              h1#navbar Navbar
+            |       
+            .component
+              .navbar.navbar-default
+                .navbar-header
+                  button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-responsive-collapse')
+                    span.icon-bar
+                    |  
+                    span.icon-bar
+                    |  
+                    span.icon-bar
+                  |             
+                  a.navbar-brand(href='#') Brand
+                |           
+                .navbar-collapse.collapse.navbar-responsive-collapse
+                  ul.nav.navbar-nav
+                    li.active
+                      a(href='#') Active
+                    |               
+                    li
+                      a(href='#') Link
+                    |               
+                    li.dropdown
+                      a.dropdown-toggle(href='#', data-toggle='dropdown')
+                        | Dropdown 
+                        b.caret
+                      |                 
+                      ul.dropdown-menu
+                        li
+                          a(href='#') Action
+                        |                   
+                        li
+                          a(href='#') Another action
+                        |                   
+                        li
+                          a(href='#') Something else here
+                        |                   
+                        li.divider
+                        |                   
+                        li.dropdown-header Dropdown header
+                        |                   
+                        li
+                          a(href='#') Separated link
+                        |                   
+                        li
+                          a(href='#') One more separated link
+                  |             
+                  form.navbar-form.navbar-left
+                    input.form-control.col-lg-8(type='text', placeholder='Search')
+                  |             
+                  ul.nav.navbar-nav.navbar-right
+                    li
+                      a(href='#') Link
+                    |               
+                    li.dropdown
+                      a.dropdown-toggle(href='#', data-toggle='dropdown')
+                        | Dropdown 
+                        b.caret
+                      |                 
+                      ul.dropdown-menu
+                        li
+                          a(href='#') Action
+                        |                   
+                        li
+                          a(href='#') Another action
+                        |                   
+                        li
+                          a(href='#') Something else here
+                        |                   
+                        li.divider
+                        |                   
+                        li
+                          a(href='#') Separated link
+            |       
+            .component
+              .navbar.navbar-inverse
+                .navbar-header
+                  button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-inverse-collapse')
+                    span.icon-bar
+                    |  
+                    span.icon-bar
+                    |  
+                    span.icon-bar
+                  |             
+                  a.navbar-brand(href='#') Brand
+                |           
+                .navbar-collapse.collapse.navbar-inverse-collapse
+                  ul.nav.navbar-nav
+                    li.active
+                      a(href='#') Active
+                    |               
+                    li
+                      a(href='#') Link
+                    |               
+                    li.dropdown
+                      a.dropdown-toggle(href='#', data-toggle='dropdown')
+                        | Dropdown 
+                        b.caret
+                      |                 
+                      ul.dropdown-menu
+                        li
+                          a(href='#') Action
+                        |                   
+                        li
+                          a(href='#') Another action
+                        |                   
+                        li
+                          a(href='#') Something else here
+                        |                   
+                        li.divider
+                        |                   
+                        li.dropdown-header Dropdown header
+                        |                   
+                        li
+                          a(href='#') Separated link
+                        |                   
+                        li
+                          a(href='#') One more separated link
+                  |             
+                  form.navbar-form.navbar-left
+                    input.form-control.col-lg-8(type='text', placeholder='Search')
+                  |             
+                  ul.nav.navbar-nav.navbar-right
+                    li
+                      a(href='#') Link
+                    |               
+                    li.dropdown
+                      a.dropdown-toggle(href='#', data-toggle='dropdown')
+                        | Dropdown 
+                        b.caret
+                      |                 
+                      ul.dropdown-menu
+                        li
+                          a(href='#') Action
+                        |                   
+                        li
+                          a(href='#') Another action
+                        |                   
+                        li
+                          a(href='#') Something else here
+                        |                   
+                        li.divider
+                        |                   
+                        li
+                          a(href='#') Separated link
+            // /example
+      //
+        Buttons
+        ==================================================
+      #buttons.section
+        .page-header
+          .row
+            .col-lg-12
+              h1#buttons Buttons
+        |   
+        .row
+          .col-md-8.col-lg-7
+            p.component
+              a.btn.btn-default(href='#') Default
+              |  
+              a.btn.btn-primary(href='#') Primary
+              |  
+              a.btn.btn-success(href='#') Success
+              |  
+              a.btn.btn-info(href='#') Info
+              |  
+              a.btn.btn-warning(href='#') Warning
+              |  
+              a.btn.btn-danger(href='#') Danger
+              |  
+              a.btn.btn-link(href='#') Link
+            |       
+            p.component
+              a.btn.btn-default.disabled(href='#') Default
+              |  
+              a.btn.btn-primary.disabled(href='#') Primary
+              |  
+              a.btn.btn-success.disabled(href='#') Success
+              |  
+              a.btn.btn-info.disabled(href='#') Info
+              |  
+              a.btn.btn-warning.disabled(href='#') Warning
+              |  
+              a.btn.btn-danger.disabled(href='#') Danger
+              |  
+              a.btn.btn-link.disabled(href='#') Link
+            |       
+            .btn-toolbar.component(style='margin: 0;')
+              .btn-group
+                a.btn.btn-default(href='#') Default
+                |  
+                a.btn.btn-default.dropdown-toggle(href='#', data-toggle='dropdown')
+                  span.caret
+                |           
+                ul.dropdown-menu
+                  li
+                    a(href='#') Action
+                  |             
+                  li
+                    a(href='#') Another action
+                  |             
+                  li
+                    a(href='#') Something else here
+                  |             
+                  li.divider
+                  |             
+                  li
+                    a(href='#') Separated link
+              |         
+              .btn-group
+                a.btn.btn-primary(href='#') Primary
+                |  
+                a.btn.btn-primary.dropdown-toggle(href='#', data-toggle='dropdown')
+                  span.caret
+                |           
+                ul.dropdown-menu
+                  li
+                    a(href='#') Action
+                  |             
+                  li
+                    a(href='#') Another action
+                  |             
+                  li
+                    a(href='#') Something else here
+                  |             
+                  li.divider
+                  |             
+                  li
+                    a(href='#') Separated link
+              |         
+              .btn-group
+                a.btn.btn-success(href='#') Success
+                |  
+                a.btn.btn-success.dropdown-toggle(href='#', data-toggle='dropdown')
+                  span.caret
+                |           
+                ul.dropdown-menu
+                  li
+                    a(href='#') Action
+                  |             
+                  li
+                    a(href='#') Another action
+                  |             
+                  li
+                    a(href='#') Something else here
+                  |             
+                  li.divider
+                  |             
+                  li
+                    a(href='#') Separated link
+              |         
+              .btn-group
+                a.btn.btn-info(href='#') Info
+                |  
+                a.btn.btn-info.dropdown-toggle(href='#', data-toggle='dropdown')
+                  span.caret
+                |           
+                ul.dropdown-menu
+                  li
+                    a(href='#') Action
+                  |             
+                  li
+                    a(href='#') Another action
+                  |             
+                  li
+                    a(href='#') Something else here
+                  |             
+                  li.divider
+                  |             
+                  li
+                    a(href='#') Separated link
+              |         
+              .btn-group
+                a.btn.btn-warning(href='#') Warning
+                |  
+                a.btn.btn-warning.dropdown-toggle(href='#', data-toggle='dropdown')
+                  span.caret
+                |           
+                ul.dropdown-menu
+                  li
+                    a(href='#') Action
+                  |             
+                  li
+                    a(href='#') Another action
+                  |             
+                  li
+                    a(href='#') Something else here
+                  |             
+                  li.divider
+                  |             
+                  li
+                    a(href='#') Separated link
+            |     
+            p.component
+              a.btn.btn-primary.btn-lg(href='#') Large button
+              |  
+              a.btn.btn-primary(href='#') Default button
+              |  
+              a.btn.btn-primary.btn-sm(href='#') Small button
+              |  
+              a.btn.btn-primary.btn-xs(href='#') Mini button
+          |     
+          .col-md-4.col-lg-5
+            p.component
+              a.btn.btn-default.btn-lg.btn-block(href='#') Block level button
+            |       
+            .component
+              .btn-group.btn-group-justified
+                a.btn.btn-default(href='#') Left
+                |  
+                a.btn.btn-default(href='#') Middle
+                |  
+                a.btn.btn-default(href='#') Right
+            |       
+            .component
+              .btn-toolbar
+                .btn-group
+                  a.btn.btn-default(href='#') 1
+                  |  
+                  a.btn.btn-default(href='#') 2
+                  |  
+                  a.btn.btn-default(href='#') 3
+                  |  
+                  a.btn.btn-default(href='#') 4
+                |           
+                .btn-group
+                  a.btn.btn-default(href='#') 5
+                  |  
+                  a.btn.btn-default(href='#') 6
+                  |  
+                  a.btn.btn-default(href='#') 7
+                |           
+                .btn-group
+                  a.btn.btn-default(href='#') 8
+                  |             
+                  .btn-group
+                    a.btn.btn-default.dropdown-toggle(href='#', data-toggle='dropdown')
+                      | Dropdown 
+                      span.caret
+                    |               
+                    ul.dropdown-menu
+                      li
+                        a(href='#') Dropdown link
+                      |                 
+                      li
+                        a(href='#') Dropdown link
+                      |                 
+                      li
+                        a(href='#') Dropdown link
+              |         
+              .component
+                .btn-group-vertical
+                  a.btn.btn-default(href='#') Button
+                  |  
+                  a.btn.btn-default(href='#') Button
+                  |  
+                  a.btn.btn-default(href='#') Button
+                  |  
+                  a.btn.btn-default(href='#') Button
+      //
+        Typography
+        ==================================================
+      #typography.section
+        .row
+          .col-lg-12
+            .page-header
+              h1#type Typography
+        // Headings
+        .row
+          .col-md-4.col-sm-6
+            .component
+              h1 Heading 1
+              |         
+              h2 Heading 2
+              |         
+              h3 Heading 3
+              |         
+              h4 Heading 4
+              |         
+              h5 Heading 5
+              |         
+              h6 Heading 6
+              |         
+              p.lead Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+          |     
+          .col-md-4.col-sm-6
+            .component
+              h2 Example body text
+              |         
+              p
+                | Nullam quis risus eget 
+                a(href='#') urna mollis ornare
+                |  vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.
+              |         
+              p
+                small This line of text is meant to be treated as fine print.
+              |         
+              p
+                | The following snippet of text is 
+                strong rendered as bold text
+                | .
+              |         
+              p
+                | The following snippet of text is 
+                em rendered as italicized text
+                | .
+              |         
+              p
+                | An abbreviation of the word attribute is 
+                abbr(title='attribute') attr
+                | .
+          |     
+          .col-md-4.col-sm-6
+            .component
+              h2 Emphasis classes
+              |         
+              p.text-muted Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.
+              |         
+              p.text-primary Nullam id dolor id nibh ultricies vehicula ut id elit.
+              |         
+              p.text-warning Etiam porta sem malesuada magna mollis euismod.
+              |         
+              p.text-danger Donec ullamcorper nulla non metus auctor fringilla.
+              |         
+              p.text-success Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
+              |         
+              p.text-info Maecenas sed diam eget risus varius blandit sit amet non magna.
+        // Blockquotes
+        .row
+          .col-lg-12
+            h2#type-blockquotes Blockquotes
+        |   
+        .row
+          .col-lg-6
+            .component
+              blockquote
+                p
+                  | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+                |           
+                small
+                  | Someone famous in 
+                  cite(title='Source Title') Source Title
+          |     
+          .col-lg-6
+            .component
+              blockquote.pull-right
+                p
+                  | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+                |           
+                small
+                  | Someone famous in 
+                  cite(title='Source Title') Source Title
+      //
+        Tables
+        ==================================================
+      #tables.section
+        .row
+          .col-lg-12
+            .page-header
+              h1#tables Tables
+            |       
+            .component
+              table.table.table-striped.table-hover
+                thead
+                  tr
+                    th #
+                    |               
+                    th Column heading
+                    |               
+                    th Column heading
+                    |               
+                    th Column heading
+                |           
+                tbody
+                  tr
+                    td 1
+                    |               
+                    td Column content
+                    |               
+                    td Column content
+                    |               
+                    td Column content
+                  |             
+                  tr
+                    td 2
+                    |               
+                    td Column content
+                    |               
+                    td Column content
+                    |               
+                    td Column content
+                  |             
+                  tr.info
+                    td 3
+                    |               
+                    td Column content
+                    |               
+                    td Column content
+                    |               
+                    td Column content
+                  |             
+                  tr.success
+                    td 4
+                    |               
+                    td Column content
+                    |               
+                    td Column content
+                    |               
+                    td Column content
+                  |             
+                  tr.danger
+                    td 5
+                    |               
+                    td Column content
+                    |               
+                    td Column content
+                    |               
+                    td Column content
+                  |             
+                  tr.warning
+                    td 6
+                    |               
+                    td Column content
+                    |               
+                    td Column content
+                    |               
+                    td Column content
+                  |             
+                  tr.active
+                    td 7
+                    |               
+                    td Column content
+                    |               
+                    td Column content
+                    |               
+                    td Column content
+            // /example
+      //
+        Forms
+        ==================================================
+      #forms.section
+        .row
+          .col-lg-12
+            .page-header
+              h1#forms Forms
+        |   
+        .row
+          .col-md-6
+            .well.component
+              form.form-horizontal
+                fieldset
+                  legend Legend
+                  |             
+                  .form-group
+                    label.col-lg-2.control-label(for='inputEmail') Email
+                    |               
+                    .col-lg-10
+                      input#inputEmail.form-control(type='text', placeholder='Email')
+                  |             
+                  .form-group
+                    label.col-lg-2.control-label(for='inputPassword') Password
+                    |               
+                    .col-lg-10
+                      input#inputPassword.form-control(type='password', placeholder='Password')
+                      |                 
+                      .checkbox
+                        label
+                          input(type='checkbox')
+                          |                     Check me out
+                  |             
+                  .form-group
+                    label.col-lg-2.control-label(for='textArea') Textarea
+                    |               
+                    .col-lg-10
+                      textarea#textArea.form-control(rows='3')
+                      |                 
+                      span.help-block
+                        | A longer block of help text that breaks onto a new line and may extend beyond one line.
+                  |             
+                  .form-group
+                    label.col-lg-2.control-label Radios
+                    |               
+                    .col-lg-10
+                      .radio
+                        label
+                          input#optionsRadios1(type='radio', name='optionsRadios', value='option1', checked='')
+                          |                     Option one is this
+                      |                 
+                      .radio
+                        label
+                          input#optionsRadios2(type='radio', name='optionsRadios', value='option2')
+                          |                     Option two can be something else
+                  |             
+                  .form-group
+                    label.col-lg-2.control-label(for='select') Selects
+                    |               
+                    .col-lg-10
+                      select#select.form-control
+                        option 1
+                        |                   
+                        option 2
+                        |                   
+                        option 3
+                        |                   
+                        option 4
+                        |                   
+                        option 5
+                      |                 
+                      br
+                      |                 
+                      select.form-control(multiple='')
+                        option 1
+                        |                   
+                        option 2
+                        |                   
+                        option 3
+                        |                   
+                        option 4
+                        |                   
+                        option 5
+                  |             
+                  .form-group
+                    .col-lg-10.col-lg-offset-2
+                      button.btn.btn-default Cancel
+                      |                 
+                      button.btn.btn-primary(type='submit') Submit
+          |     
+          .col-md-5.col-lg-4.col-lg-offset-1
+            form.component
+              .form-group
+                label.control-label(for='focusedInput') Focused input
+                |           
+                input#focusedInput.form-control(type='text', value='This is focused...')
+              |         
+              .form-group
+                label.control-label(for='disabledInput') Disabled input
+                |           
+                input#disabledInput.form-control(type='text', placeholder='Disabled input here...', disabled='')
+              |         
+              .form-group.has-warning
+                label.control-label(for='inputWarning') Input warning
+                |           
+                input#inputWarning.form-control(type='text')
+              |         
+              .form-group.has-error
+                label.control-label(for='inputError') Input error
+                |           
+                input#inputError.form-control(type='text')
+              |         
+              .form-group.has-success
+                label.control-label(for='inputSuccess') Input success
+                |           
+                input#inputSuccess.form-control(type='text')
+              |         
+              .form-group
+                label.control-label(for='inputLarge') Large input
+                |           
+                input#inputLarge.form-control.input-lg(type='text')
+              |         
+              .form-group
+                label.control-label(for='inputDefault') Default input
+                |           
+                input#inputDefault.form-control(type='text')
+              |         
+              .form-group
+                label.control-label(for='inputSmall') Small input
+                |           
+                input#inputSmall.form-control.input-sm(type='text')
+              |         
+              .form-group
+                label.control-label Input addons
+                |           
+                .input-group
+                  span.input-group-addon $
+                  |             
+                  input.form-control(type='text')
+                  |             
+                  span.input-group-btn
+                    button.btn.btn-default(type='button') Button
+        |   
+        .row
+          .col-md-12
+            h2#nav-tabs Radios &amp; Checkboxes
+        |   
+        form(role='form')
+          .row
+            .col-md-4
+              h3 Basic
+              |         
+              .checkbox.wire-checkbox
+                input#checkbox1(type='checkbox')
+                |           
+                label(for='checkbox1')  Default 
+              |         
+              .checkbox.wire-checkbox.checkbox-primary
+                input#checkbox2(type='checkbox', checked='')
+                |           
+                label(for='checkbox2')  Primary 
+              |         
+              .checkbox.wire-checkbox.checkbox-success
+                input#checkbox3(type='checkbox')
+                |           
+                label(for='checkbox3')  Success 
+              |         
+              .checkbox.wire-checkbox.checkbox-info
+                input#checkbox4(type='checkbox')
+                |           
+                label(for='checkbox4')  Info 
+              |         
+              .checkbox.wire-checkbox.checkbox-warning
+                input#checkbox5(type='checkbox', checked='')
+                |           
+                label(for='checkbox5')  Warning 
+              |         
+              .checkbox.wire-checkbox.checkbox-danger
+                input#checkbox6(type='checkbox', checked='')
+                |           
+                label(for='checkbox6')  Check me out 
+              |         
+              p Inline checkboxes
+              |         
+              .checkbox.wire-checkbox.checkbox-inline
+                input#inlineCheckbox1(type='checkbox', value='option1')
+                |           
+                label(for='inlineCheckbox1')  Inline 1 
+              |         
+              .checkbox.wire-checkbox.checkbox-success.checkbox-inline
+                input#inlineCheckbox2(type='checkbox', value='option1', checked='')
+                |           
+                label(for='inlineCheckbox2')  Inline 2 
+              |         
+              .checkbox.wire-checkbox.checkbox-inline
+                input#inlineCheckbox3(type='checkbox', value='option1')
+                |           
+                label(for='inlineCheckbox3')  Inline 3 
+            |       
+            .col-md-4
+              h3 Circled 
+              |         
+              .checkbox.wire-checkbox.checkbox-circle
+                input#checkbox7(type='checkbox')
+                |           
+                label(for='checkbox7')  Simply Rounded 
+              |         
+              .checkbox.wire-checkbox.checkbox-info.checkbox-circle
+                input#checkbox8(type='checkbox', checked='')
+                |           
+                label(for='checkbox8')  Me too 
+            |       
+            .col-md-4
+              h3  Disabled 
+              |         
+              .checkbox.wire-checkbox
+                input#checkbox9(type='checkbox', disabled='')
+                |           
+                label(for='checkbox9')  Can&apos;t check this 
+              |         
+              .checkbox.wire-checkbox.checkbox-success
+                input#checkbox10(type='checkbox', disabled='', checked='')
+                |           
+                label(for='checkbox10')  This too 
+              |         
+              .checkbox.wire-checkbox.checkbox-warning.checkbox-circle
+                input#checkbox11(type='checkbox', disabled='', checked='')
+                |           
+                label(for='checkbox11')  And this 
+        |   
+        form(role='form')
+          .row
+            .col-md-4
+              h3  Radios Basic 
+              |         
+              .radio.wire-radio
+                input#radio1(type='radio', name='radio1', value='option1', checked='')
+                |           
+                label(for='radio1')  Small 
+              |         
+              .radio.wire-radio
+                input#radio2(type='radio', name='radio1', value='option2')
+                |           
+                label(for='radio2')  Big 
+              |         
+              .radio.wire-radio.radio-danger
+                input#radio3(type='radio', name='radio2', value='option1')
+                |           
+                label(for='radio3')  Next 
+              |         
+              .radio.wire-radio.radio-danger
+                input#radio4(type='radio', name='radio2', value='option2', checked='')
+                |           
+                label(for='radio4')  One 
+              |         
+              p Inline radios
+              |         
+              .radio.wire-radio.radio-info.radio-inline
+                input#inlineRadio1(type='radio', value='option1', name='radioInline', checked='')
+                |           
+                label(for='inlineRadio1')  Inline One 
+              |         
+              .radio.wire-radio.radio-inline
+                input#inlineRadio2(type='radio', value='option1', name='radioInline')
+                |           
+                label(for='inlineRadio2')  Inline Two 
+            |       
+            .col-md-4
+              h3  Radios Disabled 
+              |         
+              .radio.wire-radio.radio-danger
+                input#radio5(type='radio', name='radio3', value='option1', disabled='')
+                |           
+                label(for='radio5')  Next 
+              |         
+              .radio.wire-radio
+                input#radio6(type='radio', name='radio3', value='option2', checked='', disabled='')
+                |           
+                label(for='radio6')  One 
+        |   
+        .row
+          .col-md-12
+            h2#nav-tabs  Toggle Switches
+        |   
+        .row
+          .col-xs-6.col-sm-4.col-md-2
+            h3 Single
+            |       
+            .switch-toggle.well
+              input#week(name='view', type='radio', checked='')
+              |         
+              label(for='week', onclick='') Week
+              |         
+              input#month(name='view', type='radio')
+              |         
+              label(for='month', onclick='') Month
+              |         
+              a.btn.btn-primary
+          |     
+          .col-xs-12.col-md-6
+            h3 Multiple
+            |       
+            .switch-toggle.switch-3.well
+              input#week-d1(name='view-d', type='radio', checked='')
+              |         
+              label(for='week-d1', onclick='') Week
+              |         
+              input#month-d2(name='view-d', type='radio')
+              |         
+              label(for='month-d2', onclick='') Month
+              |         
+              input#month-d3(name='view-d', type='radio')
+              |         
+              label(for='month-d3', onclick='') Year
+              |         
+              a.btn.btn-primary
+        |   
+        .row
+          .col-md-12
+            h2#nav-tabs  Range Slider
+        |   
+        .row
+          .col-md-6
+            input(type='range')
+      //
+        Navs
+        ==================================================
+      #Navs.section
+        .row
+          .col-lg-12
+            .page-header
+              h1#nav Navs
+        |   
+        .row
+          .col-lg-4
+            h2#nav-tabs Tabs
+            |       
+            .component
+              ul.nav.nav-tabs
+                li.active
+                  a(href='#home', data-toggle='tab') Home
+                |           
+                li
+                  a(href='#profile', data-toggle='tab') Profile
+                |           
+                li.disabled
+                  a Disabled
+              |         
+              #myTabContent.tab-content
+                #home.tab-pane.fade.active.in
+                  p
+                    | Raw denim you probably haven&apos;t heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.
+                |           
+                #profile.tab-pane.fade
+                  p
+                    | Food truck fixie locavore, accusamus mcsweeney&apos;s marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit.
+                |           
+                #dropdown1.tab-pane.fade
+                  p
+                    | Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney&apos;s organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork.
+                |           
+                #dropdown2.tab-pane.fade
+                  p
+                    | Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater.
+          |     
+          .col-lg-4
+            h2#nav-pills Pills
+            |       
+            .component
+              ul.nav.nav-pills
+                li.active
+                  a(href='#') Home
+                |           
+                li
+                  a(href='#') Profile
+                |           
+                li.disabled
+                  a(href='#') Disabled
+                |           
+                li.dropdown
+                  a.dropdown-toggle(data-toggle='dropdown', href='#')
+                    | Dropdown 
+                    span.caret
+                  |             
+                  ul.dropdown-menu
+                    li
+                      a(href='#') Action
+                    |               
+                    li
+                      a(href='#') Another action
+                    |               
+                    li
+                      a(href='#') Something else here
+                    |               
+                    li.divider
+                    |               
+                    li
+                      a(href='#') Separated link
+            |       
+            br
+            |       
+            .component
+              ul.nav.nav-pills.nav-stacked
+                li.active
+                  a(href='#') Home
+                |           
+                li
+                  a(href='#') Profile
+                |           
+                li.disabled
+                  a(href='#') Disabled
+                |           
+                li.dropdown
+                  a.dropdown-toggle(data-toggle='dropdown', href='#')
+                    | Dropdown 
+                    span.caret
+                  |             
+                  ul.dropdown-menu
+                    li
+                      a(href='#') Action
+                    |               
+                    li
+                      a(href='#') Another action
+                    |               
+                    li
+                      a(href='#') Something else here
+                    |               
+                    li.divider
+                    |               
+                    li
+                      a(href='#') Separated link
+          |     
+          .col-lg-4
+            h2#nav-breadcrumbs Breadcrumbs
+            |       
+            .component
+              ul.breadcrumb
+                li.active Home
+              |         
+              ul.breadcrumb
+                li
+                  a(href='#') Home
+                |           
+                li.active Library
+              |         
+              ul.breadcrumb
+                li
+                  a(href='#') Home
+                |           
+                li
+                  a(href='#') Library
+                |           
+                li.active Data
+        |   
+        .row
+          .col-lg-4
+            h2#pagination Pagination
+            |       
+            .component
+              ul.pagination
+                li.disabled
+                  a(href='#') &laquo;
+                |           
+                li.active
+                  a(href='#') 1
+                |           
+                li
+                  a(href='#') 2
+                |           
+                li
+                  a(href='#') 3
+                |           
+                li
+                  a(href='#') 4
+                |           
+                li
+                  a(href='#') 5
+                |           
+                li
+                  a(href='#') &raquo;
+              |         
+              ul.pagination.pagination-lg
+                li.disabled
+                  a(href='#') &laquo;
+                |           
+                li.active
+                  a(href='#') 1
+                |           
+                li
+                  a(href='#') 2
+                |           
+                li
+                  a(href='#') 3
+                |           
+                li
+                  a(href='#') &raquo;
+              |         
+              ul.pagination.pagination-sm
+                li.disabled
+                  a(href='#') &laquo;
+                |           
+                li.active
+                  a(href='#') 1
+                |           
+                li
+                  a(href='#') 2
+                |           
+                li
+                  a(href='#') 3
+                |           
+                li
+                  a(href='#') 4
+                |           
+                li
+                  a(href='#') 5
+                |           
+                li
+                  a(href='#') &raquo;
+          |     
+          .col-lg-4
+            h2#pager Pager
+            |       
+            .component
+              ul.pager
+                li
+                  a(href='#') Previous
+                |           
+                li
+                  a(href='#') Next
+              |         
+              ul.pager
+                li.previous.disabled
+                  a(href='#') &larr; Older
+                |           
+                li.next
+                  a(href='#') Newer &rarr;
+          |     
+          .col-lg-4  
+      //
+        Indicators
+        ==================================================
+      #indicators.section
+        .row
+          .col-lg-12
+            .page-header
+              h1#indicators Indicators
+        |   
+        .row
+          .col-lg-12
+            h2 Alerts
+            |       
+            .component
+              .alert.alert-dismissable.alert-warning
+                button.close(type='button', data-dismiss='alert') &times;
+                |           
+                h4 Warning!
+                |           
+                p
+                  | Best check yo self, you&apos;re not looking too good. Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus magna, 
+                  a.alert-link(href='#') vel scelerisque nisl consectetur et
+                  | .
+        |   
+        .row
+          .col-lg-4
+            .component
+              .alert.alert-dismissable.alert-danger
+                button.close(type='button', data-dismiss='alert') &times;
+                |           
+                strong Oh snap!
+                |  
+                a.alert-link(href='#') Change a few things up
+                |  and try submitting again.
+          |     
+          .col-lg-4
+            .component
+              .alert.alert-dismissable.alert-success
+                button.close(type='button', data-dismiss='alert') &times;
+                |           
+                strong Well done!
+                |  You successfully read 
+                a.alert-link(href='#') this important alert message
+                | .
+          |     
+          .col-lg-4
+            .component
+              .alert.alert-dismissable.alert-info
+                button.close(type='button', data-dismiss='alert') &times;
+                |           
+                strong Heads up!
+                |  This 
+                a.alert-link(href='#') alert needs your attention
+                | , but it&apos;s not super important.
+        |   
+        .row
+          .col-lg-4
+            h2 Labels
+            |       
+            .component(style='margin-bottom: 40px;')
+              span.label.label-default Default
+              |  
+              span.label.label-primary Primary
+              |  
+              span.label.label-success Success
+              |  
+              span.label.label-warning Warning
+              |  
+              span.label.label-danger Danger
+              |  
+              span.label.label-info Info
+          |     
+          .col-lg-4
+            h2 Badges
+            |       
+            .component
+              ul.nav.nav-pills
+                li.active
+                  a(href='#')
+                    | Home 
+                    span.badge 42
+                |           
+                li
+                  a(href='#')
+                    | Profile 
+                    span.badge
+                |           
+                li
+                  a(href='#')
+                    | Messages 
+                    span.badge 3
+      //
+        Progress bars
+        ==================================================
+      #progress.section
+        .row
+          .col-lg-12
+            .page-header
+              h1#progress Progress bars
+            |       
+            .col-md-6
+              h3#progress-basic Basic
+              |         
+              .component
+                .progress
+                  .progress-bar(style='width: 60%;')
+              |         
+              h3#progress-animated Animated
+              |         
+              .component
+                .progress.progress-striped.active
+                  .progress-bar(style='width: 45%')
+              |         
+              h3#progress-alternatives Contextual alternatives
+              |         
+              .component
+                .progress
+                  .progress-bar.progress-bar-info(style='width: 20%')
+                |           
+                .progress
+                  .progress-bar.progress-bar-success(style='width: 40%')
+                |           
+                .progress
+                  .progress-bar.progress-bar-warning(style='width: 60%')
+                |           
+                .progress
+                  .progress-bar.progress-bar-danger(style='width: 80%')
+            |       
+            .col-md-6
+              h3#progress-striped Striped
+              |         
+              .component
+                .progress.progress-striped
+                  .progress-bar.progress-bar-info(style='width: 20%')
+                |           
+                .progress.progress-striped
+                  .progress-bar.progress-bar-success(style='width: 40%')
+                |           
+                .progress.progress-striped
+                  .progress-bar.progress-bar-warning(style='width: 60%')
+                |           
+                .progress.progress-striped
+                  .progress-bar.progress-bar-danger(style='width: 80%')
+              |         
+              h3#progress-stacked Stacked
+              |         
+              .component
+                .progress
+                  .progress-bar.progress-bar-success(style='width: 35%')
+                  |             
+                  .progress-bar.progress-bar-warning(style='width: 20%')
+                  |             
+                  .progress-bar.progress-bar-danger(style='width: 10%')
+      //
+        Media
+        ==================================================
+      #media.section
+        .row
+          .col-lg-12
+            .page-header
+              h1 Media
+        |   
+        .row
+          .col-lg-12.component
+            h2 Carousel
+            //
+              Carousel
+              ==================================================
+            #myCarousel.carousel.slide(data-ride='carousel')
+              // Indicators
+              ol.carousel-indicators
+                li.active(data-target='#myCarousel', data-slide-to='0')
+                |           
+                li(data-target='#myCarousel', data-slide-to='1')
+                |           
+                li(data-target='#myCarousel', data-slide-to='2')
+              |         
+              .carousel-inner(role='listbox')
+                .item.active
+                  img(src='http://www.placehold.it/1170x400/b5bbbd/ccd1d2&text=image', alt='First slide')
+                  |             
+                  .container
+                    .carousel-caption
+                      h1 Example headline.
+                      |                 
+                      p
+                        | Note: If you&apos;re viewing this page via a 
+                        code file://
+                        |  URL, the &quot;next&quot; and &quot;previous&quot; Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.
+                      |                 
+                      p
+                        a.btn.btn-lg.btn-primary(href='#', role='button') Sign up today
+                |           
+                .item
+                  img(src='http://www.placehold.it/1170x400/b5bbbd/ccd1d2&text=image', alt='Second slide')
+                  |             
+                  .container
+                    .carousel-caption
+                      h1 Another example headline.
+                      |                 
+                      p
+                        | Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+                      |                 
+                      p
+                        a.btn.btn-lg.btn-primary(href='#', role='button') Learn more
+                |           
+                .item
+                  img(src='http://www.placehold.it/1170x400/b5bbbd/ccd1d2&text=image', alt='Third slide')
+                  |             
+                  .container
+                    .carousel-caption
+                      h1 One more for good measure.
+                      |                 
+                      p
+                        | Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+                      |                 
+                      p
+                        a.btn.btn-lg.btn-primary(href='#', role='button') Browse gallery
+              |         
+              a.left.carousel-control(href='#myCarousel', role='button', data-slide='prev')
+                span.wi.wi-chevron-left.icon-prev(aria-hidden='true')
+                |  
+                span.sr-only Previous
+              |  
+              a.right.carousel-control(href='#myCarousel', role='button', data-slide='next')
+                span.wi.wi-chevron-right.icon-next(aria-hidden='true')
+                |  
+                span.sr-only Next
+            // /.carousel
+        |   
+        .row
+          .col-sm-6.component
+            h2 Images
+            |       
+            p
+              img.img-rounded(src='http://placehold.it/100x100/b5bbbd/edf0f1&text=image')
+              |  
+              img.img-circle(src='http://placehold.it/100x100/b5bbbd/edf0f1&text=image')
+              |  
+              img.img-thumbnail(src='http://placehold.it/100x100/b5bbbd/edf0f1&text=image')
+          |     
+          .col-sm-6.component
+            h2 Media object
+            |       
+            .media
+              a.pull-left(href='#')
+                img.media-object(src='http://www.placehold.it/80x80/b5bbbd/edf0f1&text=image', alt='Media Object')
+              |         
+              .media-body
+                h4.media-heading Media heading
+                |           This is some sample text. This is some sample text.
+                |           This is some sample text. This is some sample text.
+                |           This is some sample text. This is some sample text.
+                |           This is some sample text. This is some sample text.
+            |       
+            .media
+              a.pull-left(href='#')
+                img.media-object(src='http://www.placehold.it/80x80/b5bbbd/edf0f1&text=image', alt='Media Object')
+              |         
+              .media-body
+                h4.media-heading Media heading
+                |           This is some sample text. This is some sample text.
+                |           This is some sample text. This is some sample text.
+                |           This is some sample text. This is some sample text.
+                |           This is some sample text. This is some sample text.
+                |           
+                .media
+                  a.pull-left(href='#')
+                    img.media-object(src='http://www.placehold.it/80x80/b5bbbd/edf0f1&text=image', alt='Media Object')
+                  |             
+                  .media-body
+                    h4.media-heading Nested Media heading
+                    |               This is some sample text. This is some sample text.
+                    |               This is some sample text. This is some sample text.
+                    |               This is some sample text. This is some sample text.
+                    |               This is some sample text. This is some sample text.
+        |   
+        .row
+          .col-md-12
+            h2 Thumbnails
+            |       
+            .row
+              .col-sm-6.col-md-4
+                .thumbnail
+                  img(src='http://www.placehold.it/400x250/b5bbbd/edf0f1&text=image', alt='...')
+                  |             
+                  .caption
+                    h3 Thumbnail label
+                    |               
+                    p
+                      | Mauris id augue id elit convallis accumsan. Nullam quis mauris lacus. Lorem ipsum
+                    |               
+                    p
+                      a.btn.btn-primary(href='#', role='button') Button
+                      |  
+                      a.btn.btn-default(href='#', role='button') Button
+              |         
+              .col-sm-6.col-md-4
+                .thumbnail
+                  img(src='http://www.placehold.it/400x250/b5bbbd/edf0f1&text=image', alt='...')
+                  |             
+                  .caption
+                    h3 Thumbnail label
+                    |               
+                    p
+                      | Mauris id augue id elit convallis accumsan. Nullam quis mauris lacus. Lorem ipsum
+                    |               
+                    p
+                      a.btn.btn-primary(href='#', role='button') Button
+                      |  
+                      a.btn.btn-default(href='#', role='button') Button
+              |         
+              .col-sm-6.col-md-4
+                .thumbnail
+                  img(src='http://www.placehold.it/400x250/b5bbbd/edf0f1&text=image', alt='...')
+                  |             
+                  .caption
+                    h3 Thumbnail label
+                    |               
+                    p
+                      | Mauris id augue id elit convallis accumsan. Nullam quis mauris lacus. Lorem ipsum
+                    |               
+                    p
+                      a.btn.btn-primary(href='#', role='button') Button
+                      |  
+                      a.btn.btn-default(href='#', role='button') Button
+        //
+          Containers
+          ==================================================
+        #containers.section
+          .row
+            .col-lg-12
+              .page-header
+                h1#container Containers
+              |         
+              .component
+                .jumbotron
+                  h1 Jumbotron
+                  |             
+                  p
+                    | This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.
+                  |             
+                  p
+                    a.btn.btn-primary.btn-lg Learn more
+          |     
+          .row
+            .col-lg-12
+              h2 List groups
+          |     
+          .row
+            .col-md-4
+              .component
+                ul.list-group
+                  li.list-group-item
+                    span.badge 14
+                    |  Cras justo odio
+                  |             
+                  li.list-group-item
+                    span.badge 2
+                    |  Dapibus ac facilisis in
+                  |             
+                  li.list-group-item
+                    span.badge 1
+                    |  Morbi leo risus
+            |       
+            .col-md-4
+              .component
+                .list-group
+                  a.list-group-item.active(href='#')  Cras justo odio 
+                  |  
+                  a.list-group-item(href='#') Dapibus ac facilisis in 
+                  |  
+                  a.list-group-item(href='#') Morbi leo risus 
+            |       
+            .col-md-4
+              .component
+                .list-group
+                  a.list-group-item(href='#')
+                    h4.list-group-item-heading List group item heading
+                    |             
+                    p.list-group-item-text
+                      | Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.
+                  |  
+                  a.list-group-item(href='#')
+                    h4.list-group-item-heading List group item heading
+                    |             
+                    p.list-group-item-text
+                      | Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.
+          |     
+          .row
+            .col-lg-12
+              h2 Panels
+          |     
+          .row
+            .col-md-4
+              .component
+                .panel.panel-default
+                  .panel-body  Basic panel 
+                |           
+                .panel.panel-default
+                  .panel-heading
+                    h3.panel-title Panel heading 
+                  |             
+                  .panel-body  Panel content 
+                  |             
+                  .panel-footer Panel footer
+            |       
+            .col-md-4
+              .component
+                .panel.panel-success
+                  .panel-heading
+                    h3.panel-title Panel success
+                  |             
+                  .panel-body  Panel content 
+                |           
+                .panel.panel-warning
+                  .panel-heading
+                    h3.panel-title Panel warning
+                  |             
+                  .panel-body  Panel content 
+            |       
+            .col-md-4
+              .component
+                .panel.panel-danger
+                  .panel-heading
+                    h3.panel-title Panel danger
+                  |             
+                  .panel-body  Panel content 
+                |           
+                .panel.panel-info
+                  .panel-heading
+                    h3.panel-title Panel info
+                  |             
+                  .panel-body  Panel content 
+          |     
+          .row
+            .col-lg-12
+              h2 Wells
+          |     
+          .row
+            .col-md-4
+              .component
+                .well  Look, I&apos;m in a well! 
+            |       
+            .col-md-4
+              .component
+                .well.well-sm  Look, I&apos;m in a small well! 
+            |       
+            .col-md-4
+              .component
+                .well.well-lg  Look, I&apos;m in a large well! 
+        //
+          Dialogs
+          ==================================================
+        #dialogs.section
+          .row
+            .col-lg-12
+              .page-header
+                h1#tables Dialogs
+          |     
+          .row
+            .col-md-4
+              h2 Modals
+              |         
+              .component
+                // Button trigger modal
+                button.btn.btn-primary.btn-lg(type='button', data-toggle='modal', data-target='#myModal')  Launch demo modal 
+                // Modal
+                #myModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+                  .modal-dialog
+                    .modal-content
+                      .modal-header
+                        button.close(type='button', data-dismiss='modal', aria-label='Close')
+                          span(aria-hidden='true') &times;
+                        |                   
+                        h4#myModalLabel.modal-title Modal title
+                      |                 
+                      .modal-body  This is the modal content. 
+                      |                 
+                      .modal-footer
+                        button.btn.btn-default(type='button', data-dismiss='modal') Close
+                        |                   
+                        button.btn.btn-primary(type='button') Save changes
+            |       
+            .col-md-8
+              h2 Popovers
+              |         
+              .component
+                button.btn.btn-default(type='button', data-container='body', data-toggle='popover', data-placement='left', data-content='Vivamus sagittis lacus vel augue laoreet rutrum faucibus.')  Popover on left 
+                |           
+                button.btn.btn-default(type='button', data-container='body', data-toggle='popover', data-placement='top', data-content='Vivamus sagittis lacus vel augue laoreet rutrum faucibus.')  Popover on top 
+                |           
+                button.btn.btn-default(type='button', data-container='body', data-toggle='popover', data-placement='bottom', data-content='Vivamus\
+                sagittis lacus vel augue laoreet rutrum faucibus.')  Popover on bottom 
+                |           
+                button.btn.btn-default(type='button', data-container='body', data-toggle='popover', data-placement='right', data-content='Vivamus sagittis lacus vel augue laoreet rutrum faucibus.')  Popover on right 
+            |       
+            .col-md-8
+              h2 Tooltips
+              |         
+              .component
+                button.btn.btn-default(type='button', data-toggle='tooltip', data-placement='left', title='Tooltip on left') Tooltip on left
+                |           
+                button.btn.btn-default(type='button', data-toggle='tooltip', data-placement='top', title='Tooltip on top') Tooltip on top
+                |           
+                button.btn.btn-default(type='button', data-toggle='tooltip', data-placement='bottom', title='Tooltip on bottom') Tooltip on bottom
+                |           
+                button.btn.btn-default(type='button', data-toggle='tooltip', data-placement='right', title='Tooltip on right') Tooltip on right
+        //
+          Icons
+          ==================================================
+        #icons.section
+          .row
+            .col-lg-12
+              .page-header
+                h1#tables
+                  | Icons 
+                  small
+                    a(href='icons.html') Full icon reference
+          |     
+          .row
+            .col-md-4
+              h2 Basic Icons
+              |         
+              p
+                i.wi.wi-user
+                |  wi-user
+              |         
+              p
+                i.wi.wi-mail
+                |  wi-mail
+              |         
+              p
+                i.wi.wi-book-3
+                |  wi-book-3
+              |         
+              p
+                i.wi.wi-calendar
+                |  wi-calendar
+            |       
+            .col-md-4
+              h2 Icon sizes
+              |         
+              p
+                i.wi.wi-user.wi-lg
+                |  wi-lg
+              |         
+              p
+                i.wi.wi-user.wi-2x
+                |  wi-2x
+              |         
+              p
+                i.wi.wi-user.wi-3x
+                |  wi-3x
+              |         
+              p
+                i.wi.wi-user.wi-4x
+                |  wi-4x
+              |         
+              p
+                i.wi.wi-user.wi-5x
+                |  wi-5x
+            |       
+            .col-md-4
+              h2 Fixed Width
+              |         
+              p
+                | Use wi-fw to set icons at a fixed width. Great to use when different icon widths throw off alignment. Especially useful in things like nav lists &amp; list groups.
+              |         
+              .list-group
+                a.list-group-item(href='#')
+                  i.wi.wi-home.wi-fw
+                  | &nbsp; Home
+                |  
+                a.list-group-item(href='#')
+                  i.wi.wi-book.wi-fw
+                  | &nbsp; Library
+                |  
+                a.list-group-item(href='#')
+                  i.wi.wi-pencil.wi-fw
+                  | &nbsp; Applications
+                |  
+                a.list-group-item(href='#')
+                  i.wi.wi-gear.wi-fw
+                  | &nbsp; Settings
+          |     
+          .row
+            .col-md-4
+              h2 List icons
+              |         
+              p Use wi-ul and wi-li to easily replace default bullets in unordered lists.
+              |         
+              ul.wi-ul
+                li
+                  i.wi-li.wi.wi-bullet
+                  | List icons
+                |           
+                li
+                  i.wi-li.wi.wi-checkbox
+                  | can be used
+                |           
+                li
+                  i.wi-li.wi.wi-spinner.wi-spin
+                  | as bullets
+                |           
+                li
+                  i.wi-li.wi.wi-arrow-circle-right
+                  | in lists
+            |       
+            .col-md-4
+              h2 Bordered &amp; Pulled
+              |         
+              p Use wi-border and pull-right or pull-left for easy pull quotes or article icons.
+              |         
+              p
+                i.wi.wi-flag.wi-3x.pull-left.wi-border
+                |  ...tomorrow we will run faster, stretch out our arms farther...
+                |           And then one fine morning&mdash; So we beat on, boats against the
+                |           current, borne back ceaselessly into the past.
+            |       
+            .col-md-4
+              h2 Animated
+              |         
+              p
+                | Use the wi-spin class to get any icon to rotate, and use wi-pulse to have it rotate with 8 steps.
+              |         
+              p
+                i.wi.wi-spinner.wi-spin.wi-3x
+                |  
+                i.wi.wi-asterisk-1.wi-spin.wi-3x
+                |  
+                i.wi.wi-refresh.wi-spin.wi-3x
+                |  
+                i.wi.wi-gear.wi-spin.wi-3x
+                |  
+                i.wi.wi-circle-1.wi-pulse.wi-3x
+          |     
+          .row
+            .col-md-4
+              h2 Rotated &amp; Flipped
+              |         
+              p To arbitrarily rotate and flip icons, use the wi-rotate-* and wi-flip-* classes.
+              |         
+              p
+                i.wi.wi-flag
+                |  normal
+              |         
+              p
+                i.wi.wi-flag.wi-rotate-90
+                |  wi-rotate-90
+              |         
+              p
+                i.wi.wi-flag.wi-rotate-180
+                |  wi-rotate-180
+              |         
+              p
+                i.wi.wi-flag.wi-rotate-270
+                |  wi-rotate-270
+              |         
+              p
+                i.wi.wi-flag.wi-flip-horizontal
+                |  wi-flip-horizontal
+              |         
+              p
+                i.wi.wi-flag.wi-flip-vertical
+                |  icon-flip-vertical
+            |       
+            .col-md-8
+              h2 Bootstrap Examples
+              |         
+              p
+                a.btn.btn-default.btn-sm(href='#')
+                  i.wi.wi-gear
+                  |  Settings
+                |  
+                a.btn.btn-danger(href='#')
+                  i.wi.wi-trash.wi-lg
+                  |  Delete
+                |  
+                a.btn.btn-lg.btn-success(href='#')
+                  i.wi.wi-camera-2.wi-2x.pull-left
+                  |  Really big
+                  br
+                  |           Button
+                |         
+                .btn-group
+                  a.btn.btn-default(href='#')
+                    i.wi.wi-text-left
+                  |  
+                  a.btn.btn-default(href='#')
+                    i.wi.wi-text-center
+                  |  
+                  a.btn.btn-default(href='#')
+                    i.wi.wi-text-right
+                  |  
+                  a.btn.btn-default(href='#')
+                    i.wi.wi-text-justify
+              |         
+              p
+                .input-group
+                  span.input-group-addon
+                    i.wi.wi-mail.wi-fw
+                  |           
+                  input.form-control(type='text', placeholder='Email address')
+              |         
+              p
+                .input-group
+                  span.input-group-addon
+                    i.wi.wi-key.wi-fw
+                  |           
+                  input.form-control(type='password', placeholder='Password')
+              |         
+              .btn-group
+                a.btn.btn-primary(href='#')
+                  i.wi.wi-user.wi-fw
+                  |  User
+                |  
+                a.btn.btn-primary.dropdown-toggle(data-toggle='dropdown', href='#')
+                  span.wi.wi-caret-down
+                |           
+                ul.dropdown-menu
+                  li
+                    a(href='#')
+                      i.wi.wi-pencil.wi-fw
+                      |  Edit
+                  |             
+                  li
+                    a(href='#')
+                      i.wi.wi-trash.wi-fw
+                      |  Delete
+                  |             
+                  li
+                    a(href='#')
+                      i.wi.wi-no.wi-fw
+                      |  Ban
+                  |             
+                  li.divider
+                  |             
+                  li
+                    a(href='#')  Make admin
+    // Footer
+    footer
+      .container
+        .row
+          .col-lg-12
+            p
+              | Copyright 2014 
+              a(href='http://www.cleverui.co') Clever UI Co
+              | .
+    script(src='https://code.jquery.com/jquery-1.10.2.min.js')
+    script(src='http://cleverui.co/demos/wireless/bootstrap/js/bootstrap.min.js')
+    script.
+      $(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+      $('[data-toggle="popover"]').popover();
+      })
